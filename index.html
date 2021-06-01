@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Microverse Trial Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fitno">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1 id="title" class="text-center">Microverse Survey Form</h1>
+            <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </div>    
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">Age <span class="clue">(Optional)</span></label>
+                <input id="number" type="number" min="10" max="99" name="age" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Microverse to a friend?</p>
+                <label>
+                    <input name="user-recommend" class="input-radio" type="radio" value="definitely" checked>
+                    <p class="input-text">Definitely</p>
+                </label>
+                <label>
+                    <input name="user-recommend" class="input-radio" type="radio" value="maybe">
+                    <p class="input-text">Maybe</p>                   
+                </label>
+                <label>
+                    <input name="user-recommend" class="input-radio" type="radio" value="not-sure">
+                    <p class="input-text">Not sure</p>                    
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite feature of Microverse?</p>
+                <select name="mostlike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select a option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="teachers">Teachers</option>
+                    <option value="support">Support</option>
+                    <option value="community">Community</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="challenges">
+                    <p class="input-text">Challenges</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="pre-course-work">
+                    <p class="input-text">Pre-course Work</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="tuition">
+                    <p class="input-text">Tuition</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="trials">
+                    <p class="input-text">Trials</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="slack-community">
+                    <p class="input-text">Slack-Community</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="email-communication">
+                    <p class="input-text">Email Communication</p>
+                    
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="prefer" value="blog">
+                    <p class="input-text">Blog</p>
+                    
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" id="comment" class="input-textarea" placeholder="Enter your comment here ..."></textarea>
+            </div>
+            <div class="form-group">
+                <div class="button-container">
+                    <button id="submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+       
+
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
